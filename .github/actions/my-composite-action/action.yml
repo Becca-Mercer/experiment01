@@ -1,10 +1,5 @@
 name: "My Composit Action"
-description: "A reusable composit action that checks out code and sets up Node.js"
-
-inputs: 
-  node-version: 
-    description: "The Node.js version to use"
-    required: true
+description: "basically prints success"
 
 runs:
   using: "composite"
