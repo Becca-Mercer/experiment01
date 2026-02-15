@@ -4,7 +4,9 @@ description: "basically prints success"
 runs:
   using: "composite"
   steps:
-
+    - name: checkout repo
+      uses: actions/checkout@v4
+      
     - id: run-script 
       run: echo "results= Success" >> $GITHUB_OUTPUT
       shell: bash
