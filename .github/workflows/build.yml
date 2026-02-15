@@ -1,9 +1,9 @@
 name: build with composite action
 on: 
-  pull-request:
+  pull_request:
     types: [open]
 permissions:
-  pull-request: write 
+  pull_request: write 
 
 jobs:
   build:
