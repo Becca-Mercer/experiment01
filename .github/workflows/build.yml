@@ -5,11 +5,11 @@ on:
 permissions:
   pull-request: write 
 
-  jobs:
-    build:
-      run-on: ubuntu-latest
-      steps:
-        - name: Use My composite action to build 
-          uses: ./.github/actions/my-composite-action
-          with: 
-            node-version: 18
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+      - name: Use My composite action to build 
+        uses: ./.github/actions/my-composite-action
+        with: 
+          node-version: 18
