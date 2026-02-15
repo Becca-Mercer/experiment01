@@ -1,8 +1,8 @@
-name: "My Composite Action"
-description: "A reusable composite action that checks out code and sets up Node.js"
+name: "My Composit Action"
+description: "A reusable composit action that checks out code and sets up Node.js"
 
-inputs:
-  node-version:
+inputs: 
+  node-version: 
     description: "The Node.js version to use"
     required: true
 
@@ -11,8 +11,8 @@ runs:
   steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Set up Node.js
+    
+    - name: set up Node.js 
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ inputs.node-version }}
+        node-version: ${{ inputs.node-version}}
