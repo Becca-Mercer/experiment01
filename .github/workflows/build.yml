@@ -11,5 +11,5 @@ permissions:
       steps:
         - name: Use My composite action to build 
           uses: ./.github/actions/my-composite-action
-            with: 
-              node-version: 18
+          with: 
+            node-version: 18
