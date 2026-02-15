@@ -2,9 +2,9 @@ name: Composite action experiment
 on:
   pull-request:
     types: [open]
-  permissions: 
-    pull-request: write 
-    
+permissions: 
+  pull-request: write 
+
 jobs:
   build: 
     runs-on: ubuntu-latest 
